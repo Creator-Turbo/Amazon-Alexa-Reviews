@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Alexa Reviews</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Alexa Reviews</h1>
+        <form action="/predict" method="POST">
+            <label for="review">Enter your review:</label><br>
+            <textarea name="review" id="review" rows="5" cols="50"></textarea><br><br>
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <div class="review-sample">
+            <h2>Sample Reviews:</h2>
+            <p><b>Sample 2:</b> "This service is terrible, very disappointing."</p>
+            <p><b>Sample 3:</b> "The app is okay. It could use some improvements."</p>
+            <p><b>Sample 4:</b> "Had the best experience at this restaurant! Amazing food and great service. Highly recommend!"</p>
+            <p><b>Sample 5:</b> "The website is slow and crashes frequently."</p>
+        </div>
+    </div>
+</body>
+</html>

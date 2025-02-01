@@ -1,0 +1,41 @@
+# Core libraries
+numpy
+pandas
+matplotlib
+seaborn
+
+# NLP Libraries
+nltk
+spacy
+scikit-learn
+textblob
+wordcloud
+
+
+# Sentiment Analysis
+vaderSentiment
+
+
+
+# Model Saving and Deployment
+joblib
+flask
+gunicorn
+
+# Visualization and Analysis
+
+
+ydata-profiling
+
+# kernal 
+ipykernel
+ipywidgets
+
+
+# Model Building 
+ xgboost
+ lightgbm
+
+
+# Tracking Model 
+mlflow
