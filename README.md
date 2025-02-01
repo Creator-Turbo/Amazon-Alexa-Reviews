@@ -1,7 +1,5 @@
 # Amazon-Alexa-Reviews
 
-# Twitter Sentiment Analysis
-
 ### Table of Contents
 - [Demo](#demo)
 - [Overview](#overview)
@@ -21,73 +19,54 @@
 ---
 
 ## Demo
-This project analyzes tweets to determine their sentiment as positive, negative, or neutral.  
-**Link to Demo:** [Steam Review Sentiment Analysis](https://steam-review-sentiment-analysis.onrender.com) 
+This project analyzes Amazon Alexa reviews to determine sentiments (positive, negative).
+<!-- **Link to Demo:** [Steam Review Sentiment Analysis](https://steam-review-sentiment-analysis.onrender.com)  -->
 
-## Twitter Sentiment Analysis
+## Amazon-Alexa-Reviews
 
-![Steam Sentiment Analysis](https://sloboda-studio.com/wp-content/uploads/2019/09/848x323-Clutch-portfolio-tweet-sentiment-analysis.png.webp)
+![Amazon Alexa Reviews Analysis](https://i.imgur.com/IhxPJfc.jpeg)
 
 
 ---
 
 ## Overview
-The Twitter Sentiment Analysis project leverages natural language processing (NLP) and machine learning techniques to analyze tweets and classify their sentiment. It is designed to provide real-time sentiment insights, making it a powerful tool for businesses, marketers, and researchers.
+The **Amazon-Alexa-Reviews** project leverages natural language processing (NLP) and machine learning techniques to analyze Amazon Alexa reviews. The goal is to classify the sentiment of the reviews to understand customer satisfaction and feedback trends.
 
 Key features:
-
-- Preprocessing of tweet text data.
-
-- Sentiment classification using advanced machine learning models.
-
-- Interactive web application for real-time predictions.
+- Data preprocessing of Amazon Alexa reviews.
+- Sentiment classification using machine learning models.
+- Real-time predictions via a web application.
 ---
 
 ## Motivation
-Sentiment analysis of tweets enables organizations to:
+Sentiment analysis of product reviews helps businesses:
+- Understand customer feedback.
+- Identify potential improvements for products.
+- Monitor user sentiment on specific features or attributes.
 
-- Understand public opinion on various topics.
+This project showcases the application of NLP and machine learning for analyzing product reviews and classifying sentiments.
 
-- Monitor brand perception in real time.
-
-- Identify trending issues and user sentiments.
-
-- This project demonstrates the practical application of NLP and machine learning to analyze social media content.
 
 ---
 
 ## Technical Aspect
 ### Training Machine Learning Models:
-Training Machine Learning Models:
+1. **Data Collection**:
+   - Reviews are collected from Amazon's publicly available Alexa reviews dataset.
 
-Data Collection:
+2. **Preprocessing**:
+   - Cleaning the reviews by removing irrelevant text (URLs, special characters, etc.).
+   - Tokenization, stop-word removal, and stemming/lemmatization.
+   - Converting text to numerical representations using methods like TF-IDF or Word2Vec.
 
-- Tweets are collected using the Twitter API or publicly available datasets.
+3. **Model Training**:
+   - The project uses models like Logistic Regression, Naive Bayes, or more advanced transformers such as BERT.
+   - Hyperparameter tuning and model evaluation using metrics like accuracy, precision, recall, and F1-score.
 
-Preprocessing:
-
-- Removing URLs, mentions, hashtags, and special characters.
-
-- Tokenization, stop-word removal, and stemming/lemmatization.
-
-- Converting text to numerical features using TF-IDF or Word2Vec.
-
-Model Training:
-
-- Models include Logistic Regression, Support Vector Machines (SVM), or BERT.
-
-- Hyperparameter tuning for better accuracy.
-
-Model Evaluation:
-
-- Metrics include accuracy, precision, recall, and F1 score.
-
-- Building and Hosting a Flask Web App:
-
-- A Flask-based web app processes user-inputted tweets and displays predictions.
-
-- Deployed on Render for public access.
-
+4. **Web Application**:
+   - A Flask-based web app allows users to input reviews and get real-time sentiment predictions.
+   - The app is deployed on Render for public access.
+  
 ---
 
 ## Installation
@@ -97,7 +76,7 @@ The Code is written in Python 3.10. If you don't have Python installed you can f
 
 ```bash
 
-gh repo clone Creator-Turbo/Twitter-Sentiment-Analysis
+gh repo clone Creator-Turbo/Amazon-Alexa-Reviews
 
 ```
 # Install dependencies: (all lib)
@@ -111,7 +90,7 @@ pip install -r requirements.txt
 To train the Machine leaning models:
  To run the Flask web app locally
 ```bash
-python webapp/app.py
+python app.py
 
 ```
 # Deployment on Render
