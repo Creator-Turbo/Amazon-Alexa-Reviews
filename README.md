@@ -1,4 +1,4 @@
-# Amazon-Alexa-Reviews
+# Amazon-Alexa-Reviews \  Machine leaning model 
 
 ### Table of Contents
 - [Demo](#demo)
@@ -19,8 +19,8 @@
 ---
 
 ## Demo
-This project analyzes Amazon Alexa reviews to determine sentiments (positive, negative).
-<!-- **Link to Demo:** [Steam Review Sentiment Analysis](https://steam-review-sentiment-analysis.onrender.com)  -->
+This project analyzes Amazon Alexa reviews to determine sentiments (positive, negative).<br>
+**Link to Demo:** [Amazon-Alexa-Reviews Analysis](https://amazon-alexa-reviews.onrender.com) 
 
 ## Amazon-Alexa-Reviews
 
@@ -36,6 +36,20 @@ Key features:
 - Data preprocessing of Amazon Alexa reviews.
 - Sentiment classification using machine learning models.
 - Real-time predictions via a web application.
+
+## Model Performance
+
+### Evaluation Metrics
+- **Accuracy**: 0.91
+- **Precision**: 0.83
+- **Recall**: 0.91
+- **F1 Score**: 0.87
+
+### Model Training Details
+- **Classifier**: SVC (Support Vector Classifier)
+- **Cross-Validation**: 3 folds for each of 10 candidates (totalling 30 fits)
+- **Best Model**: SVC
+- **Best F1 Score**: 0.90
 ---
 
 ## Motivation
@@ -130,9 +144,6 @@ Amazon-Alexa-Reviews/
 ├── README.md
 ├── requirements.txt
 └── app.py               # Main Flask application
-
-
-
 ```
 
 ## To Do
